@@ -1,8 +1,8 @@
 <template>
         <TitleMM/>
         <Date/>
-        <div className="flex justify-center w-[100%]">
-            <div className="max-w-[80%] md:max-w-[60%] pb-[20px]">
+        <div class="flex justify-center w-[100%]">
+            <div class="max-w-[80%] md:max-w-[60%] pb-[20px]">
                 <LifeCalendar/>
             </div>
         </div>

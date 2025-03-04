@@ -1,7 +1,7 @@
 <template>
-    <div class="clock" className="flex flex-col items-center w-full justify-center p-2">
-        <p class="date" className=" text-4xl font-bold p-3"> {{ date }} </p>
-        <p class="time" className=" text-4xl font-bold p-3"> {{ time }} </p>
+    <div id="clock" class="flex flex-col items-center w-full justify-center p-2">
+        <p id="date" class=" text-4xl font-bold p-3"> {{ date }} </p>
+        <p id="time" class=" text-4xl font-bold p-3"> {{ time }} </p>
     </div>
 </template>
 

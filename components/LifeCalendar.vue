@@ -7,7 +7,7 @@
           v-for="(square, index) in squares"
           :key="index"
           :class="[
-            'w-[5px] h-[5px]  md:w-2.5 md:h-2.5 border rounded-sm border-gray-600',
+            'w-[4px] h-[4px]  md:w-[6px] md:h-[6px] border rounded-sm border-gray-600',
             { 'bg-gray-500': isColored(index) },
             { 'bg-gray-200': !isColored(index) },
           ]"
@@ -21,7 +21,7 @@
     data() {
       return {
         totalSquares: 4680, // Total weeks in 90 years
-        weeksLived: 1140, // Example: Weeks lived so far
+        weeksLived: 0,
       };
     },
     computed: {
@@ -35,6 +35,25 @@
         // Color the squares that represent weeks lived
         return index < this.weeksLived;
       },
+      calculateLivedWeeks(birthdate) {
+
+        const birthDate = new Date(birthdate);
+        const currentDate = new Date(); 
+
+        // Calculate the total milliseconds between the two dates
+        const timeDifference = currentDate - birthDate;
+
+        // Convert milliseconds to weeks
+        const millisecondsInWeek = 1000 * 60 * 60 * 24 * 7;
+        const totalWeeksLived = Math.floor(timeDifference / millisecondsInWeek);
+
+        console.log(totalWeeksLived);
+        this.weeksLived = totalWeeksLived;
+        
+      },
     },
+    mounted(){
+      this.calculateLivedWeeks(localStorage.getItem("birthdate"));
+    }
   };
   </script>
