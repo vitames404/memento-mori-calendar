@@ -1,75 +1,51 @@
-# Nuxt Minimal Starter
+# Life Calendar - Browser Homepage
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This project is a **memento mori-inspired browser homepage** built in just one day. It features a **Life Calendar** that visually represents how much of your life you've lived and how much time you potentially have left (based on an average lifespan of 90 years). The goal is to remind you to make the most of your time and not waste it!
 
-## Setup
 
-Make sure to install dependencies:
+![image](https://github.com/user-attachments/assets/7342a1f0-edf3-4f26-b5dc-7154ca4c645f)
 
-```bash
-# npm
-npm install
+**Link**: https://life-calendar-0vga.onrender.com/
 
-# pnpm
-pnpm install
+---
 
-# yarn
-yarn install
+## 🛠️ Technologies Used
 
-# bun
-bun install
-```
+- **Frontend Framework**: Nuxt 3.js
+- **UI Framework**: Vue.js
+- **Styling**: Tailwind CSS
 
-## Development Server
+---
 
-Start the development server on `http://localhost:3000`:
+## ✨ Features
 
-```bash
-# npm
-npm run dev
+- **Life Calendar**:
+  - Visualizes your life in weeks, showing how many weeks you've lived and how many are potentially left.
+  - A powerful reminder to cherish your time and focus on what truly matters.
+- **Minimalist Design**:
+  - Clean and simple interface designed to serve as a browser homepage.
+- **Memento Mori Theme**:
+  - Inspired by the ancient philosophy of remembering mortality to live a more meaningful life.
 
-# pnpm
-pnpm dev
+---
 
-# yarn
-yarn dev
+## 🚀 How It Works
 
-# bun
-bun run dev
-```
+1. **Life Calendar**:
+   - The calendar divides your life into weeks, with each block representing one week.
+   - Filled blocks represent weeks you've already lived, while empty blocks represent the time you potentially have left.
+2. **Browser Homepage**:
+   - Set this page as your browser's homepage to see the Life Calendar every time you open a new tab.
+3. **Reflect and Act**:
+   - Use the visual representation of your life as a daily reminder to prioritize your goals and passions.
 
-## Production
+---
 
-Build the application for production:
+## 🔧 Setup and Installation
 
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+1. Clone the repository:
+   git clone https://github.com/your-username/your-repo.git
+2. Install dependencies
+   npm install
+3. Run the project
+   npm run dev
