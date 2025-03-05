@@ -18,5 +18,16 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: 'render.com'
+  },
+
+  app: {
+    baseURL: '/'
+  },
+
+  ssr: false,
+  
+  // Ensure SPA mode
+  routeRules: {
+    '/**': { ssr: false }
   }
 });
