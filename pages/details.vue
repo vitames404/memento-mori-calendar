@@ -10,6 +10,7 @@
     import Inputs from '../components/Inputs.vue'
     import TitleMM from '../components/Title.vue'
   </script>
+  
 
 <style scoped>
   .germania-one-regular {
