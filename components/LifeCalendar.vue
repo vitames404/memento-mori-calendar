@@ -1,17 +1,23 @@
 <template>
     <div class="life-calendar">
       <!-- Grid Container -->
-      <div class="grid grid-cols-30 md:grid-cols-52 gap-[5px]">
+      <div>
+        0 - 82 weeks (row) | 90 years average (total)
+      </div>
+      <div>
+      <div class="grid grid-cols-30 md:grid-cols-82 gap-[5px]">
         <!-- Generate 4,680 squares -->
         <div
           v-for="(square, index) in squares"
           :key="index"
           :class="[
-            'w-[4px] h-[4px]  md:w-[6px] md:h-[6px] border rounded-sm border-gray-600',
-            { 'bg-gray-500': isColored(index) },
+            'w-[4px] h-[4px]  md:w-[8px] md:h-[8px] border rounded-sm border-gray-600',
+            { 'bg-black': isColored(index) },
             { 'bg-gray-200': !isColored(index) },
           ]"
-        ></div>
+        >
+      </div>
+      </div>
       </div>
     </div>
   </template>

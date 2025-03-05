@@ -2,14 +2,14 @@
     <div class="flex justify-center">
       <form @submit.prevent="saveBirthdate">
         <section class="flex flex-col space-y-4">
-          <label for="birthdate" class="block">What is your birth date?</label>
+          <label for="birthdate" class="block text-4xl">What is your birth date?</label>
           <input 
             id="birthdate"
             v-model="birthdate"
             type="date"
             class="border rounded px-2 py-1"
           />
-          <button type="submit" class="bg-gray-300 text-black py-2 px-4 rounded hover:bg-gray-400">Save</button>
+          <button type="submit" class="bg-gray-300 text-black py-2 px-4 rounded text-xl hover:bg-gray-400">Save</button>
         </section>
       </form>
     </div> 

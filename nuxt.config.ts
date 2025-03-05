@@ -1,7 +1,7 @@
 // nuxt.config.ts
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxt/fonts', '@nuxt/icon'],
 
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css', // Path to your custom Tailwind CSS file
